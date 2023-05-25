@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima - JavaScript Moderno</title>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link href="css/styles.css" rel="stylesheet">
+    <!-- <link href="css/tailwind.min.css" rel="stylesheet"> -->
+</head>
+<body>
+
+    <div class="container mx-auto ">
+        <h1 id="titulo" class="text-4xl mt-5 titulo font-bold uppercase text-center text-card-color">Consultar el Clima</h1>
+        <div class="max-w-lg mx-auto ">
+
+            <div class="p-6 mt-10">
+                <div id="resultado">
+                    <p class="text-center text-violet-500 mt-6">Agrega tu ciudad y país, el resultado se mostrará aquí</p>
+                </div>
+            </div>
+            
+            <form id="formulario" class="mt-10 " action="#" method="POST">
+                <div class="mt-5">
+                    <input 
+                        type="text" 
+                        name="ciudad"
+                        id="ciudad"
+                        placeholder="Escribe tu Ciudad"
+                        class="w-full p-2 rounded"
+                    />
+                </div>
+                <div class="mt-5">
+                    <select 
+                        class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" 
+                        id="pais"
+                    >
+                        <option disabled selected value="">-- Seleccione País --</option>
+                        <option value="AR"> <span><img src="img/argentina.png" alt="Bandera de Argentina" loading="lazy"> </span> Argentina</option>
+                        <option value="CO"> <img src="img/colombia.png" alt="Bandera de Colombia" loading="lazy"> Colombia</option>
+                        <option value="CR"> <img src="img/costaRica.png" alt="Bandera de Costa Rica" loading="lazy"> Costa Rica</option>
+                        <option value="ES"> <img src="img/espana.png" alt="Bandera de España" loading="lazy"> España</option>
+                        <option value="US"> <img src="img/usa.png" alt="Bandera de Estados Unidos" loading="lazy"> Estados Unidos</option>
+                        <option value="MX"> <img src="img/mexico.png" alt="Bandera de México" loading="lazy"> México</option>
+                        <option value="PE"> <img src="img/peru.png" alt="Bandera de Perú" loading="lazy"> Perú</option>
+                        <option value="DO"> <img src="img/repdom.png" alt="Bandera de República Dominicana" loading="lazy"> República Dominicana</option>
+                    </select>
+                </div>
+
+                <input 
+                    type="submit"
+                    class="submit mt-5 w-full p-3 uppercase font-bold cursor-pointer rounded bg-card-color text-white"
+                    value="Obtener Clima"
+                />
+
+            </form>
+
+     
+        </div>
+    </div>
+
+    
+
+    <script src="js/app.js"></script>
+</body>
+</html>
